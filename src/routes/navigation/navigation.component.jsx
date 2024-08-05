@@ -12,7 +12,7 @@ import { UserContext } from '../../contexts/user.context';
 
 const Navigation = () => {
     const { currentUser } = useContext(UserContext);
-    const { isDropdown, setIsDropdownOpen } = useContext(CartContext)
+    const { isDropdown } = useContext(CartContext)
     return (
         <Fragment>
             <div className='navigation'>
