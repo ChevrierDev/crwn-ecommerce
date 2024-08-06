@@ -22,13 +22,22 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAAvo_OlJ998EeEAgjr5nl9kwG9VjHR-nk",
-  authDomain: "crwn-clothing-db-52354.firebaseapp.com",
-  projectId: "crwn-clothing-db-52354",
-  storageBucket: "crwn-clothing-db-52354.appspot.com",
-  messagingSenderId: "477867125906",
-  appId: "1:477867125906:web:b2bb29b98535314c63ca4b",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
+console.log("API Key: ", process.env.REACT_APP_FIREBASE_API_KEY);
+console.log("Auth Domain: ", process.env.REACT_APP_FIREBASE_AUTH_DOMAIN);
+console.log("Project ID: ", process.env.REACT_APP_FIREBASE_PROJECT_ID);
+console.log("Storage Bucket: ", process.env.REACT_APP_FIREBASE_STORAGE_BUCKET);
+console.log(
+  "Messaging Sender ID: ",
+  process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID
+);
+console.log("App ID: ", process.env.REACT_APP_FIREBASE_APP_ID);
 
 // Initialize Firebase
 const fireBaseApp = initializeApp(firebaseConfig);
