@@ -75,6 +75,7 @@ export const CartProvider = ({ children }) => {
     const clearItemFromCart = (cartItemToClear) => {
         setCartItems((prevCartItems) => clearCartItem(prevCartItems, cartItemToClear));
     };
+
     const value = {
         isDropdown,
         setIsDropdownOpen,
@@ -85,5 +86,6 @@ export const CartProvider = ({ children }) => {
         cartCount,
         cartTotal
     }
+
     return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
