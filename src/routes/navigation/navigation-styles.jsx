@@ -20,7 +20,8 @@ export const NavLinks = styled.div`
     height: 100 %;
     display: flex;
     align-items: center;
-    justify-content: flex - end;
+    justify-content: flex-end;
+    cursor: pointer
 `;
 
 export const NavLink = styled(Link)`
