@@ -7,11 +7,13 @@ import { CartIconContainer, ShoppingIcon, ItemCount } from './cart-icon.styles';
 const CartIcon = () => {
 
     const dispatch = useDispatch();
+
     const cartCount = useSelector(selectCartCount);
     const isDropdown = useSelector(selectIsCartOpen)
 
 
     const toggleIsCartOpen = () => dispatch(setIsCartOpen(!isDropdown))
+
     return (
         <CartIconContainer onClick={toggleIsCartOpen}>
             <ShoppingIcon className='shopping-icon' />

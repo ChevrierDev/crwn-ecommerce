@@ -16,6 +16,7 @@ import { signOutStart } from '../../store/user/user.action';
 
 const Navigation = () => {
     const dispatch = useDispatch();
+
     const currentUser = useSelector(selectCurrentUser);
     const isDropdown = useSelector(selectIsCartOpen);
 
