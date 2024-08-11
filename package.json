@@ -8,6 +8,10 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.5",
     "react": "^18.3.1",
@@ -24,6 +28,8 @@
     "sass": "^1.77.8",
     "stripe": "^16.7.0",
     "styled-components": "^6.1.12",
+    "typed-redux-saga": "^1.5.0",
+    "typescript": "^5.5.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -49,5 +55,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/redux-logger": "^3.0.13",
+    "babel-plugin-macros": "^3.1.0"
   }
 }
